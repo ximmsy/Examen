@@ -1,0 +1,147 @@
+ <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria</title>
+
+<link rel="stylesheet" href="css/style.css">
+    <!-- Fuente Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+           --burgundy: #FAC4B1;
+            --rose-red: #FAC8C3;
+            --tickle-pink: #FAC8C3;
+            --lavender-blush: #FADDB1;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--lavender-blush);
+            color: #3b3b3b;
+        }
+
+        header {
+            background-color: var(--burgundy);
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 1.8em;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+        }
+
+        .item {
+            background: white;
+            width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .item h3 {
+            color: var(--rose-red);
+            margin-top: 10px;
+        }
+
+        .item p {
+            font-size: 0.95em;
+        }
+
+        .item button {
+            background-color: var(--tickle-pink);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .item button:hover {
+            background-color: var(--rose-red);
+            transform: scale(1.05);
+        }
+
+        .galeria img {
+    transition: transform 0.8s ease-in-out;
+    transform-origin: center;
+}
+
+.galeria img.rotar {
+    transform: rotate(180deg);
+}
+
+.galeria {
+    perspective: 800px;
+}
+
+.galeria img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+    transition: transform 0.8s ease-in-out;
+    transform-origin: center;
+    backface-visibility: hidden;
+}
+
+.galeria img:hover {
+    transform: rotate(180deg);
+}
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Galeria</h1>
+    </header>
+
+     <div class= "galeria">
+       
+    <main>
+      
+       <img src="img/imagen2.jpeg" alt="Cecytem">
+       <img src="img/imagen3.jpeg" alt="Cecytem">
+       <img src="img/imagen4.jpeg" alt="Cecytem">
+       <img src="img/imagen5.jpeg" alt="Cecytem">
+       <img src="img/imagen6.jpeg" alt="Cecytem">
+       <img src="img/imagen7.jpeg" alt="Cecytem">
+       <img src="img/imagen8.jpeg" alt="Cecytem">
+       <img src="img/imagen9.jpeg" alt="Cecytem">
+        </div>
+    </main>
+
+</body>
+</html>
+
+

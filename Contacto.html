@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+
+    <!-- Fuente Quicksand -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --burgundy: #FAC4B1;
+            --rose-red: #FAC8C3;
+            --tickle-pink: #FAC8C3;
+            --lavender-blush: #FADDB1;
+        }
+
+        body {
+            font-family: 'Quicksand', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--lavender-blush);
+            color: #3b3b3b;
+        }
+
+        header {
+            background-color: var(--burgundy);
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            font-size: 1.8em;
+        }
+
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 40px 20px;
+        }
+
+        .item {
+            background: white;
+            width: 250px;
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+        }
+
+        .item img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        .item h3 {
+            color: var(--rose-red);
+            margin-top: 10px;
+        }
+
+        .item p {
+            font-size: 0.95em;
+        }
+
+        .item button {
+            background-color: var(--tickle-pink);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-top: 10px;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .item button:hover {
+            background-color: var(--rose-red);
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Contactos</h1>
+    </header>
+
+       
+    <main>
+     
+
+        <div class="datos">
+    <p><strong>Teléfono:</strong> 55 1710 4772</p>
+    <p><strong>Instagram:</strong> 
+        <a href="https://www.instagram.com/cecytemchimal12?igsh=MWoxdWVJ3ZXB1eD11Ng==" target="_blank">
+            @cecytemchimal12
+        </a>
+    </p>
+
+
+    <p><strong>Formulario:</strong> 
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSehO1xkTHOs2tC4yqIQkpo2b556_mDUddjyAZLzbg9mlOjN7w/viewform?usp=sharing&ouid=108260264621076407431" target="_blank">
+            FORMS
+        </a>
+    </p>
+    
+
+</div>
+
+<div class="mapa">
+    <iframe 
+        src="https://maps.google.com/maps?q=CECyTEM%20Chimalhuacán%20Estado%20de%20México&t=&z=15&ie=UTF8&iwloc=&output=embed"
+        width="100%" 
+        height="300" 
+        style="border:0; border-radius: 15px;" 
+        allowfullscreen 
+        loading="lazy">
+    </iframe>
+</div>
+
+
+</div>
+    </main>
+
+</body>
+</html>
